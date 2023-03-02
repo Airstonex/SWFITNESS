@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SW Fitness - Konditerem</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font / Betűtípus -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img class="sw-logo" src="./img/sw_fitness.png" alt="logo" />
+        <span class="visually-hidden">Company logo / Cég logo</span>
+        <div class="nav__content">
+          <!-- Icon to toggle the navigation on/off / Navigáció be/ki kapcsolására szolgáló gomb -->
+          <button
+            class="hamburger"
+            aria-controls="nav__list"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars hamburger-icon"></i>
+            <span class="visually-hidden">Menu / Menü</span>
+          </button>
+
+          <!-- Hidden by default below 768px screen width, can toggled with the hamburger icon, 
+            visible above 768px or bigger screen width / Alapból nem látszik 768px képernyőszélesség alatt, a hamburger ikon megnyomásával jeleníthetjük meg, illetve tűntethetjük el, 768px vagy nagyobb képernyőszélességtől látható -->
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#about-us">Rólunk</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Szolgáltatásaink</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#prices">Árak</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#information">Információk</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Button to change the theme / Gomb a témaválasztáshoz -->
+        <button class="theme-button">
+          <i class="fa-solid fa-moon theme-icon"></i>
+          <span class="visually-hidden">
+            Theme changer icon / Témaválasztó ikon
+          </span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner__container flex">
+          <div class="banner__bg">
+            <img class="banner__img" src="./img/banner_1.JPG" alt="banner" />
+            <img class="banner__img" src="./img/banner_2.JPG" alt="banner" />
+            <img class="banner__img" src="./img/banner_3.JPG" alt="banner" />
+            <img class="banner__img" src="./img/banner_4.JPG" alt="banner" />
+            <img class="banner__img" src="./img/banner_5.JPG" alt="banner" />
+            <img class="banner__img" src="./img/banner_6.JPG" alt="banner" />
+          </div>
+          <h1 class="page-title">SW Fitness</h1>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="container flex">
+          <img class="about-us__img" src="./img/ceo_v2.jpg" alt="ceo" />
+          <div class="about-us__content">
+            <h2 class="section-title">Rólunk</h2>
+            <p>
+              A céget Weisz Roland és Schwarz Éva alapították 1998-ban,
+              Bonyhádon, ami azóta kihagyás nélkül folyamatosan üzemel. A céljuk
+              az, hogy minél több emberhez eljusson a testedzés fontossága és jó
+              irányba változzon életvitelük. Felszerelt edzőterem, öltöző, saját
+              szekrény, zuhanyzó, különböző táplálékkiegészítők, jó hangulat, és
+              segítőkész dolgozók várnak rád a teremben!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title">Szolgáltatásaink</h2>
+
+          <div class="flex">
+            <div class="service flex">
+              <img class="service__img" src="./img/gym.JPG" alt="gym" />
+              <div class="service__content">
+                <h3 class="section-subtitle">Edzőterem</h3>
+                <p>
+                  Nem számít, hogy versenyszerűen űzöd az edzést, vagy hobbi
+                  sportoló vagy, érezd jól magad, és kapcsolódj ki nálunk az SW
+                  Fitness-ben, ahol jó hangulat, családias környezet, és egy
+                  felszerelt terem vár rád.
+                </p>
+              </div>
+            </div>
+
+            <div class="service service--mirrored flex">
+              <img
+                class="service__img"
+                src="./img/solarium.JPG"
+                alt="solarium"
+              />
+              <div class="service__content">
+                <h3 class="section-subtitle">Szolárium</h3>
+                <p>
+                  A színünk egy nagyon fontos szempont a versenyeken, de egy
+                  átlagos sportoló számára is fontos a jó szín. A megfelelő
+                  tónusú, egyenletes szín nagyban hozzájárul esztétikus
+                  megjelenésünkhöz, ezért érdemes rá nagyon odafigyelni.
+                </p>
+              </div>
+            </div>
+
+            <div class="service flex">
+              <img class="service__img" src="./img/lockers.JPG" alt="lockers" />
+              <div class="service__content">
+                <h3 class="section-subtitle">Öltöző</h3>
+                <p>
+                  Konditermünk öltözőjében mindenki számára saját szekrényt,
+                  valamint két zuhanyzót kínálunk ingyenesen.
+                </p>
+              </div>
+            </div>
+
+            <div class="service service--mirrored flex">
+              <img
+                class="service__img"
+                src="./img/supplements.jpg"
+                alt="supplements"
+              />
+              <div class="service__content">
+                <h3 class="section-subtitle">Táplálékkiegészítők</h3>
+                <p>
+                  A táplálékkiegészítők használata ma mindennapos tevékenység a
+                  versenyzők körében, de szinte minden hobbi sportolónál is.
+                  Fontos megjegyezni, hogy nem helyettesítik az étkezést,
+                  ugyanúgy figyelnünk kell a helyes táplálkozásra, viszont
+                  tökeletesen kiegészítik az adott személy étrendjét.
+                </p>
+              </div>
+            </div>
+
+            <div class="service flex">
+              <img class="service__img" src="./img/parking.JPG" alt="parking" />
+              <div class="service__content">
+                <h3 class="section-subtitle">Ingyenes parkoló</h3>
+                <p>
+                  Nem kell aggódnod amiatt, hogy nem lesz hely, ahová le tudsz
+                  parkolni, esetleg csak fizetőset találsz, ugyanis a terem
+                  mellett egy tágas, ingyenes parkoló található.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices" id="prices">
+        <div class="container">
+          <h2 class="section-title">Árak</h2>
+
+          <div class="grid">
+            <div class="card">
+              <h3 class="card__title">Napi jegy</h3>
+              <div class="card__content">
+                <p class="card__price">1500 Ft</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Kezdőknek tökéletes</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Szekrény</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Kardió és konditermi gépek</p>
+              </div>
+            </div>
+
+            <div class="card card--popular">
+              <h3 class="card__title">Havi bérlet</h3>
+              <div class="card__content">
+                <p class="card__price">11000 Ft</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Ár-érték arány</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Szekrény</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Kardió és konditermi gépek</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Szolárium</h3>
+              <div class="card__content">
+                <p class="card__price">150 Ft/perc</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Tökéletes szín</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Nyugtató hatás</p>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>D-Vitamin a téli hónapokban</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="information" id="information">
+        <div class="container">
+          <div class="information__items">
+            <div class="information__content grid">
+              <section class="contact">
+                <h2 class="section-title">Elérhetőségeink</h2>
+
+                <div class="contact__items">
+                  <div class="contact__item">
+                    <i class="fa-solid fa-map"></i>
+                    <p>7150, Bonyhád, Széchenyi tér 1.</p>
+                  </div>
+                  <div class="contact__item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>swfitness@gmail.com</p>
+                  </div>
+                  <div class="contact__item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+36205415678</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="opening">
+                <h2 class="section-title">Nyitvatartás</h2>
+
+                <div class="opening__items">
+                  <div class="opening__item">
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <h3 class="section-subtitle">Hétfő - Péntek</h3>
+                    </div>
+                    <p>08:00 - 12:00</p>
+                    <p>13:30 - 20:00</p>
+                  </div>
+
+                  <div class="opening__item">
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <h3 class="section-subtitle">Szombat</h3>
+                    </div>
+                    <p>09:00 - 12:00</p>
+                  </div>
+
+                  <div class="opening__item">
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                      <h3 class="section-subtitle">Vasárnap</h3>
+                    </div>
+                    <p>ZÁRVA</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="data">
+                <div class="data__items">
+                  <!-- <div class="data__item">Adatvédelmi tájékoztató</div>
+                    <div class="data__item">Cookie szabályzat</div> -->
+                  <div class="data__item">
+                    <h2 class="section-title">Kövess minket!</h2>
+                    <a
+                      class="data__link"
+                      href="https://www.facebook.com/swfitnessbonyhad"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="information__map">
+              <iframe
+                class="map-img"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11026.401308258848!2d18.5315011!3d46.2979138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1e8ecff50ce8b67!2sSW%20Fitness!5e0!3m2!1shu!2shu!4v1668609969781!5m2!1shu!2shu"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+              <span class="visually-hidden">Map / Térkép</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Button that scrolls to the top of the page / Egy gomb ami felgörget az oldal tetejére -->
+      <button class="home-button">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+        <span class="visually-hidden">
+          Scrolls to the top / Görgetés az oldal tetejére
+        </span>
+      </button>
+    </footer>
+  </body>
+
+  <!-- JS -->
+  <script src="./js/header.js"></script>
+  <script src="./js/body.js"></script>
+  <script src="./js/footer.js"></script>
+</html>

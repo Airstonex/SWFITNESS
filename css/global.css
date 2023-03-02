@@ -1,0 +1,134 @@
+/* =================
+   Reset
+   ================= */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: font-size 200ms;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =================
+   General
+   ================= */
+
+html {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  color: var(--fg-primary);
+  font-weight: var(--fw-400);
+  transition: color 200ms;
+}
+
+:root {
+  --fg-primary: #000000;
+  --fg-secondary: #0e7097;
+  --fg-opening: #4d4d4d;
+  --bg-nav: #d4e2e3;
+  --bg-about-us: #d4e2e396;
+  --bg-services: #d4e2e3;
+  --bg-prices: #d4e2e396;
+  --bg-prices-item-header: #d4e2e3;
+  --bg-prices-item-body: #fdf4f4;
+  --bg-prices-popular-item-before: #1ba8cf;
+  --bg-footer: #d4e2e3;
+  --logo: unset;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --fs-100: 1.0625rem;
+  --fs-200: 1.25rem;
+  --fs-300: 1.3125rem;
+  --fs-400: 1.4375rem;
+  --fs-500: 2.5rem;
+}
+
+.dark-theme {
+  --fg-primary: #ffffff;
+  --fg-secondary: #e3963e;
+  --fg-opening: #8a8a8a;
+  --bg-nav: #121a22;
+  --bg-about-us: #12202e;
+  --bg-services: #121a22;
+  --bg-prices: #12202e;
+  --bg-prices-item-header: #121a22;
+  --bg-prices-item-body: #0c1b2b;
+  --bg-prices-popular-item-before: #e3963e;
+  --bg-footer: #121a22;
+  --logo: invert(99%) sepia(100%) saturate(0%) hue-rotate(1deg) brightness(109%)
+    contrast(101%);
+}
+
+section {
+  transition: background-color 200ms ease-in-out;
+}
+
+.container {
+  padding: 6.25em 2.1875em;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* =================
+   Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+  :root {
+    --fs-100: 1.125rem;
+    --fs-200: 1.375rem;
+    --fs-300: 1.5625rem;
+    --fs-400: 1.6875rem;
+    --fs-500: 3.75rem;
+  }
+
+  html {
+    scroll-padding-top: 6.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --fs-100: 1.1875rem;
+    --fs-200: 1.5rem;
+    --fs-300: 1.6875rem;
+    --fs-400: 1.8125rem;
+    --fs-500: 5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --fs-500: 6.25rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  :root {
+    --fs-100: 1.4375rem;
+    --fs-200: 1.8125rem;
+    --fs-300: 2rem;
+    --fs-400: 2.125rem;
+    --fs-500: 7.5rem;
+  }
+
+  .container {
+    max-width: 1600px;
+  }
+}

@@ -1,0 +1,74 @@
+/* =================
+   Typography
+   ================= */
+
+.page-title {
+  font-size: var(--fs-500);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+/* =================
+   Layout
+   ================= */
+
+.banner__container {
+  position: relative;
+  min-height: 400px;
+}
+
+.banner .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  filter: brightness(50%);
+  display: flex;
+  z-index: -1;
+}
+
+.banner__img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__bg > img:first-child {
+  --total-slides: 6;
+  --duration-per-slide: 5s;
+  --total-duration: calc(var(--duration-per-slide) * var(--total-slides));
+  animation: bgSlider var(--total-duration) steps(var(--total-slides)) infinite;
+}
+
+@keyframes bgSlider {
+  to {
+    margin-left: calc(var(--total-slides) * -100%);
+  }
+}
+
+/* =================
+   Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+  /* .banner-bg {
+    min-height: 100vh;
+    margin-top: 0;
+  } */
+
+  .banner__container {
+    min-height: 90vh;
+  }
+}

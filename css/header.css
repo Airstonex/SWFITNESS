@@ -1,0 +1,145 @@
+/* =================
+   Typography
+   ================= */
+
+.nav__item {
+  /* font-size: 1.7rem; */
+  font-size: var(--fs-100);
+  font-weight: var(--fw-700);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 200ms;
+}
+
+.nav__item:focus,
+.nav__item:hover {
+  color: var(--fg-secondary);
+  cursor: pointer;
+}
+
+/* =================
+   Layout
+   ================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--bg-nav);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: background-color 200ms ease-in-out;
+  transition: height 200ms;
+  height: 110px;
+  width: 100%;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+  margin-top: 2.625em;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.nav__list {
+  display: none;
+  flex-direction: column;
+  gap: 1.875em;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.sw-logo {
+  width: 70px;
+  height: 70px;
+  filter: var(--logo);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* =================
+   Buttons
+   ================= */
+
+.hamburger {
+  align-self: center;
+  background: none;
+  border: 0;
+  color: var(--fg-primary);
+  transition: color 200ms ease-in-out;
+}
+
+.hamburger-icon {
+  font-size: 1.5625rem;
+}
+
+.hamburger-icon:hover,
+.hamburger-icon:focus {
+  cursor: pointer;
+  color: var(--fg-secondary);
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  color: inherit;
+  position: absolute;
+  top: 43px;
+  right: 20px;
+}
+
+.theme-icon {
+  font-size: 1.5625rem;
+}
+
+.theme-icon:hover,
+.theme-icon:focus {
+  cursor: pointer;
+}
+
+/* =================
+   Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none !important;
+  }
+
+  .nav {
+    height: 110px !important;
+  }
+
+  .nav__list {
+    display: flex !important;
+    flex-direction: row;
+  }
+
+  .nav__items {
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .nav__content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,227 @@
+/* =================
+   Typography
+   ================= */
+
+.section-title,
+.section-subtitle,
+.card__title {
+  letter-spacing: 1px;
+}
+
+.section-title,
+.section-subtitle,
+.card__title {
+  color: var(--fg-secondary);
+}
+
+.section-title,
+.card__title {
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: var(--fs-400);
+  margin-bottom: 3em;
+}
+
+.about-us .section-title {
+  margin-bottom: 0.5em;
+}
+
+.section-subtitle {
+  margin-bottom: 0.5em;
+}
+
+section p {
+  font-size: var(--fs-100);
+}
+
+.section-subtitle,
+.card__price {
+  font-size: var(--fs-200);
+}
+
+.services p {
+  font-style: italic;
+}
+
+.card__title {
+  font-size: var(--fs-300);
+  background-color: var(--bg-prices-item-header);
+  padding: 1.5em 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1.25em 0.625em;
+  padding: 2.5em 1.25em;
+  text-align: start;
+}
+
+.card__content p:not(:first-child) {
+  grid-column: 2 / -1;
+}
+
+.card__price {
+  grid-column: 2;
+  font-weight: 700;
+  padding: 1em 0;
+}
+
+.card__content i {
+  grid-column: 1;
+  justify-self: end;
+  margin-right: 0.25em;
+  font-size: 1.5625rem;
+}
+
+.services,
+.prices {
+  text-align: center;
+}
+
+/* =================
+   Components
+   ================= */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(100px, 110px) 1fr;
+  background-color: var(--bg-prices-item-body);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+.card--popular {
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.card--popular::before {
+  content: "Népszerű";
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background-color: var(--bg-prices-popular-item-before);
+  color: white;
+  padding: 0.25em;
+}
+
+/* =================
+   Layout
+   ================= */
+
+.about-us {
+  background-color: var(--bg-about-us);
+}
+
+.services {
+  background-color: var(--bg-services);
+}
+
+.prices {
+  background-color: var(--bg-prices);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.services .container > .flex {
+  flex-direction: column;
+  align-items: unset;
+  gap: 6em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 400px);
+  justify-content: center;
+  gap: 3.125em 0em;
+}
+
+.about-us__img,
+.about-us p,
+.service__img,
+.service__content {
+  max-width: 400px;
+}
+
+.about-us__img,
+.service__img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* =================
+   Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .about-us .flex {
+    align-items: start;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service--mirrored .service__content {
+    order: 1;
+  }
+
+  .service--mirrored .service__img {
+    order: 2;
+  }
+
+  .service__content {
+    text-align: left;
+  }
+
+  .service__img,
+  .service__content {
+    max-width: 300px;
+  }
+
+  .about-us p,
+  .about-us__img {
+    max-width: 350px;
+  }
+
+  .card--popular {
+    transform: scale(1.1);
+    margin: 0 0.625em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    grid-template-rows: minmax(100px, 120px) 1fr;
+  }
+
+  .service__img,
+  .service__content {
+    max-width: 400px;
+  }
+
+  .about-us__img,
+  .about-us p {
+    max-width: 500px;
+  }
+}
