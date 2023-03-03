@@ -8,7 +8,7 @@
   font-weight: var(--fw-700);
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: color 200ms;
+  /* transition: color 200ms; */
 }
 
 .nav__item:focus,
@@ -28,8 +28,8 @@
   background-color: var(--bg-nav);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  transition: background-color 200ms ease-in-out;
-  transition: height 200ms;
+  /* transition: background-color 200ms; */
+  transition: height 200ms linear;
   height: 110px;
   width: 100%;
 }
@@ -83,7 +83,7 @@
   background: none;
   border: 0;
   color: var(--fg-primary);
-  transition: color 200ms ease-in-out;
+  /* transition: color 200ms; */
 }
 
 .hamburger-icon {
