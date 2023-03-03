@@ -19,7 +19,7 @@ function openNav() {
 
 function closeNav() {
   navlist.style.display = "none";
-  header.style.height = "110px";
+  header.style.height = "100px";
 }
 
 for (var i = 0; i < navlink.length; i++) {

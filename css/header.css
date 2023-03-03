@@ -30,7 +30,7 @@
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   /* transition: background-color 200ms; */
   transition: height 200ms linear;
-  height: 110px;
+  height: 100px;
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.875em;
-  margin-top: 2.625em;
+  margin-top: 2.3em;
 }
 
 .visually-hidden {
@@ -70,7 +70,7 @@
   height: 70px;
   filter: var(--logo);
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
 }
 
@@ -101,7 +101,7 @@
   border: none;
   color: inherit;
   position: absolute;
-  top: 43px;
+  top: 38px;
   right: 20px;
 }
 
@@ -124,7 +124,7 @@
   }
 
   .nav {
-    height: 110px !important;
+    height: 100px !important;
   }
 
   .nav__list {

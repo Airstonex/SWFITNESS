@@ -63,12 +63,7 @@
    ================= */
 
 @media (min-width: 768px) {
-  /* .banner-bg {
-    min-height: 100vh;
-    margin-top: 0;
-  } */
-
   .banner__container {
-    min-height: 90vh;
+    height: 90vh;
   }
 }
