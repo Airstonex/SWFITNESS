@@ -46,6 +46,7 @@
 .contact__item i,
 .opening__item i {
   color: var(--fg-secondary);
+  font-size: 1.2rem;
 }
 
 .opening p {
@@ -108,7 +109,19 @@ footer {
 @media (min-width: 768px) {
   .information .grid {
     justify-items: center;
-    gap: 3.125em;
+    gap: 1em;
+  }
+
+  .information .contact {
+    justify-self: start;
+  }
+
+  .information .data {
+    justify-self: end;
+  }
+
+  .information__map.grid {
+    grid-template-columns: 1fr;
   }
 
   .data__item {
