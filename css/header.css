@@ -46,16 +46,6 @@
   margin-top: 2.3em;
 }
 
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-}
-
 .nav__list {
   display: none;
   flex-direction: column;
