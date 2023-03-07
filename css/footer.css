@@ -23,7 +23,6 @@
 
 .opening p {
   font-size: 0.9375rem;
-  /* color: rgb(138, 138, 138); */
   color: var(--fg-opening);
 }
 
@@ -60,7 +59,6 @@
 footer {
   background-color: var(--bg-footer);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  /* transition: background-color 200ms; */
 }
 
 .information__content {
@@ -92,13 +90,9 @@ footer {
   position: fixed;
   bottom: 25px;
   right: 20px;
-  cursor: pointer;
   visibility: hidden;
   font-size: 1.875rem;
   color: var(--fg-secondary);
-  background: none;
-  border: none;
-  /* transition: visibility 200ms, opacity 200ms, background-color 200ms; */
   transition: visibility 200ms, opacity 200ms;
 }
 
