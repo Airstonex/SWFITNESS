@@ -24,8 +24,9 @@
   top: 0;
   z-index: 1000;
   background-color: var(--bg-nav);
-
-  transition: height 200ms linear;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: height 200ms ease;
   height: 100px;
   width: 100%;
 }
