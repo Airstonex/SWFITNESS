@@ -35,7 +35,7 @@ button:hover {
 html {
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 20rem;
+  scroll-padding-top: 19.5rem;
 }
 
 body {
@@ -116,7 +116,7 @@ body {
   }
 
   html {
-    scroll-padding-top: 6.2rem;
+    scroll-padding-top: 6rem;
   }
 }
 
